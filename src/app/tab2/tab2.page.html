@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Ion Item
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,38 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Ion Item</ion-title>
     </ion-toolbar>
   </ion-header>
+  <p>Twic image right under the Ion Item</p>
+  <ion-item>
+      <TwicImg src="components/puppy.jpg"></TwicImg>
+  </ion-item>
+  <p>Twic image right under the Ion Item but with specified width</p>
+  <ion-item>
+      <TwicImg class="sm" src="components/puppy.jpg"></TwicImg>
+  </ion-item>
+  <p>ion-item + ion-thumbnail as container</p>
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <TwicImg src="components/puppy.jpg"></TwicImg>
+    </ion-thumbnail>
+  </ion-item>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <p>ion-item + custom div as container</p>
+  <ion-item>
+    <div class="sm">
+      <TwicImg src="components/puppy.jpg"></TwicImg>
+    </div>
+  </ion-item>
+
+  <p>ion-item + div as container + twicImg focus and ratio</p>
+  <ion-item>
+    <div class="sm">
+      <TwicImg src="components/puppy.jpg" focus="auto" ratio="1/2"></TwicImg>
+    </div>
+  </ion-item>
+
+
+
 </ion-content>
